@@ -6,7 +6,7 @@ export default function Home() {
           
           <div style={styles.mainContainer}>
           {Array.map((el)=>(<ProfileCard key={el.id} robot={el}/>))}
-               
+
           </div>
           
      </div>)
@@ -22,7 +22,7 @@ const styles ={
           width: "900px",
           display: "flex",
           flexWrap: "wrap",
-          gap: "30px",
-          justifyContent: "space-between",
+          gap: "50px",
+          justifyContent: "",
      },
 }

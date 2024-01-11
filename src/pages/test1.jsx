@@ -1,17 +1,16 @@
-
 import { TextBox } from "../components/test1/Paragraph";
 import { Image } from "@/components/test1/Image";
-// import styles from '@/styles/Test1.css'
+import style from "@/styles/Test1.module.css";
 
 export default function Home() {
   return (
-    <div >
-      <div style={styles.flexContainer}>
+    <div>
+      <div className={`${style.flexContainer}`}>
         <Image />
         <Image />
         <Image />
       </div>
-      <div style={styles.flexContainer}>
+      <div className={`${style.flexContainer}`}>
         <TextBox />
         <TextBox />
       </div>
@@ -19,11 +18,17 @@ export default function Home() {
   );
 }
 
-const styles = {
-  flexContainer: {
-    display: "flex",
-    justifyContent: "space-between",
-    gap: "10px",
-  },
-  
-};
+// const styles = {
+//   flexContainer: {
+//     display: "flex",
+//     justifyContent: "space-between",
+//     gap: "10px",
+//   },
+
+// };
+
+// <div style={styles.flexContainer}>
+//         <Image />
+//         <Image />
+//         <Image />
+//       </div>
