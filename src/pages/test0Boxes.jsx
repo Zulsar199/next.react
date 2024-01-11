@@ -1,4 +1,4 @@
-import { RedBox, YellowBox } from "../components/Boxes";
+import { RedBox, YellowBox } from "../components/test0Boxes/test0Boxes";
 
 export default function Home() {
   return (

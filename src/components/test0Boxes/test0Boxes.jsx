@@ -7,3 +7,4 @@ export const YellowBox = () =>{
 }
 
 // export default RedBox
+// export default YellowBox
