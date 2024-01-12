@@ -31,13 +31,18 @@ export default function Home() {
       comment: "16",
     },
   ];
-  return(
-    <div className = {styles.body}>
-        <div className = {styles.mainContainer}>
-            {arr.map((el) => (
-                <Box imgUrl = {el.imgUrl} title = {el.title} share = {el.share} comment = {el.comment}></Box>
-            ))}
-        </div>
+  return (
+    <div className={styles.body}>
+      <div className={styles.mainContainer}>
+        {arr.map((el) => (
+          <Box
+            imgUrl={el.imgUrl}
+            title={el.title}
+            share={el.share}
+            comment={el.comment}
+          ></Box>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
