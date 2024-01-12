@@ -10,6 +10,10 @@ const Styles = {
           width: "100%",
           height: "60%",
      },
+     someInfo: {
+      display: "flex",
+      justifyContent: "space-between",
+     },
      screenData: {
        display: "flex",
        flexDirection: "column",
