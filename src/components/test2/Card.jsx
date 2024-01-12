@@ -12,7 +12,7 @@ export const ProfileCard = (props) => {
         />
       </div>
       <div style={Styles.screenData}>
-        <div>{props.first_name}</div>
+        <div>{props.firstName} {props.lastName}</div>
         <div style={Styles.someInfo}>
           <div>{props.employmentTitle}</div>
           <div>{props.gender}</div>
@@ -22,3 +22,4 @@ export const ProfileCard = (props) => {
     </div>
   );
 };
+

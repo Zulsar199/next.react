@@ -1,5 +1,5 @@
-import { ProfileCard } from "../components/test2RobotProfile/Card";
-import Array from "@/components/test2RobotProfile/Data";
+import { ProfileCard } from "../components/test2/Card";
+import Array from "@/components/test2/Data";
 import styles from "@/styles/Test2.module.css";
 
 export default function Home() {
@@ -9,7 +9,8 @@ export default function Home() {
         {Array.map((el) => (
           <ProfileCard
             avatar={el.avatar}
-            first_name={el.first_name}
+            firstName={el.first_name}
+            lastName={el.last_name}
             gender={el.gender}
             email={el.email}
             employmentTitle={el.employment.title}
