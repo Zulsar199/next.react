@@ -6,10 +6,11 @@ export const List1 = ({ listArray }) => {
       <div>
         <h4>First name:</h4>
         {listArray.map((el) => {
-          return <p>{el.first_name}</p>;
+          return <p>{el.newFname}</p>;
         })}
       </div>
-      <List4 arrayList={listArray}></List4>
+
+      {/* <List4 arrayList={listArray}></List4> */}
     </div>
   );
 };

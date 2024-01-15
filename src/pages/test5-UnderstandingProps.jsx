@@ -1,7 +1,7 @@
 import {List1} from "../components/test5/component1";
 import {List2} from "../components/test5/component2";
 import {List3} from "../components/test5/component3";
-
+import styles from "@/styles/Test5.module.css"
 
 export default function Home() {
   const array = [
@@ -28,8 +28,8 @@ export default function Home() {
     },
   ];
   return (
-    <div>
-      <div>
+    <div className={styles.body}>
+      <div className={styles.mainContainer}>
         <List1 listArray={array}></List1>
         <List2 listArray={array}></List2>
         <List3 listArray={array}></List3>

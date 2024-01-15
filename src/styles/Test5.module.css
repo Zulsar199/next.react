@@ -1,0 +1,13 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.mainContainer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 800px;
+  height: 200px;
+}

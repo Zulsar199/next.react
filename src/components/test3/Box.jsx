@@ -11,7 +11,7 @@ export const Box = (props) => {
       <div style={{ width: "100%", height: "60%" }}>
         <img
           src={props.imgUrl}
-          style={{ width: "100%", height: "100%", borderTopRadius: "8px" }}
+          style={{ width: "100%", height: "100%", borderTopRightRadius: "8px", borderTopLeftRadius: "8px", }}
           alt=""
         />
       </div>
