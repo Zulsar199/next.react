@@ -1,6 +1,6 @@
-import { List1 } from "../components/test5/component1";
-import { List2 } from "../components/test5/component2";
-import { List3 } from "../components/test5/component3";
+import { List1 } from "../components/test7/component1";
+import { List2 } from "../components/test7/component2";
+import { List3 } from "../components/test7/component3";
 import styles from "@/styles/Test5.module.css";
 
 export default function Home() {
@@ -27,26 +27,28 @@ export default function Home() {
       job: "Pinecone",
     },
   ];
-  const name = () => {
-    let newArr = array.map((e) => {
-      return [(newFname = e.first_name), (newLname = e.last_name)];
-    });
-    return newArr;
-  };
+  const names = array.map((e) => {
+    return { first_name: e.first_name, last_name: e.last_name };
+  });
+
+  console.log(names);
+
   const age = () => {
     array.map((el) => {
-      return [el.age];
+      return { age: el.age };
     });
   };
+
   const jobScore = () => {
     array.map((el) => {
-      return [el.job, el.score];
+      return { job: el.job, score: el.score };
     });
   };
+
   return (
     <div className={styles.body}>
       <div className={styles.mainContainer}>
-        <List1 listArray={name}></List1>
+        <List1 names={names}></List1>
         {/* <List2 listArray={age}></List2>
         <List3 listArray={jobScore}></List3> */}
       </div>
