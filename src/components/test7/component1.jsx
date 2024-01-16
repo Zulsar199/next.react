@@ -1,10 +1,8 @@
 import { List4 } from "./component4";
 
 export const List1 = ({ names }) => {
-  console.log("on comp 1 ", names);
-
-  const last_name_array = names.map((el) => {
-    return { last_name: el.last_name };
+  const lastNameArray = names.map((el) => {
+    return { lastName: el.last_name };
   });
   return (
     <div>
@@ -15,7 +13,7 @@ export const List1 = ({ names }) => {
         })}
       </div>
 
-      <List4 last_name={last_name_array}></List4>
+      <List4 lastName={lastNameArray}></List4>
     </div>
   );
 };

@@ -27,30 +27,28 @@ export default function Home() {
       job: "Pinecone",
     },
   ];
-  const names = array.map((e) => {
-    return { first_name: e.first_name, last_name: e.last_name };
+  const names = array.map((el) => {
+    return { first_name: el.first_name, last_name: el.last_name };
   });
 
   console.log(names);
 
-  const age = () => {
-    array.map((el) => {
+  const age = array.map((el) => {
       return { age: el.age };
     });
-  };
 
-  const jobScore = () => {
-    array.map((el) => {
+
+  const jobScore = array.map((el) => {
       return { job: el.job, score: el.score };
     });
-  };
+
 
   return (
     <div className={styles.body}>
       <div className={styles.mainContainer}>
         <List1 names={names}></List1>
-        {/* <List2 listArray={age}></List2>
-        <List3 listArray={jobScore}></List3> */}
+        <List2 ages={age}></List2>
+        <List3 jobsScores={jobScore}></List3>
       </div>
     </div>
   );
