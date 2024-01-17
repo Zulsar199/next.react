@@ -6,20 +6,26 @@ export const Hour = () => {
   const [minute, setMinute] = useState(0);
   const [hour, setHour] = useState(0);
   const [start, setStart] = useState("start");
-  const handleClick =()=>{
+
+  const handleClick = () => {
     setStart("stop");
-    console.log("hi");
-  }
+    
+  };
+  let interval;
+
+    if (!interval) {
+      interval = setInterval(() => {
+        setSecond(second+1);
+      }, 1000);
+      return setSecond;
+    }
 
   return (
     <div>
-        <CustomButt start = {start} handleButton={handleClick()}/>
-        <p>{hour} hour</p>
-        <p>{minute} minute</p>
-        <p>{second} second</p>
+      <CustomButt start={start} handleButton={handleClick} />
+      <p>{hour} hour</p>
+      <p>{minute} minute</p>
+      <p>{second} second</p>
     </div>
-  )
-    
-
-
-}
+  );
+};
